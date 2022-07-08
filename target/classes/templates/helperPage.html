@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        td {
+            width:100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center">Amazon Store Utilities</h1>
+<form action="#" th:action="@{/asu/submitForm}" th:object="${productInfo}" method="post">
+    <table>
+        <tr>
+            <td>
+                <label for="productId">Product Id:</label>
+                <input type="text" name="productId" id="productId" placeholder="" th:field="*{id}"/>
+            </td>
+            <td>
+                <label for="productCost">Product Cost:</label>
+                <input type="text" name="productCost" id="productCost" placeholder="" th:field="*{cost}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="productCount">Product Count:</label>
+                <input type="text" name="productCount" id="productCount" placeholder="" th:field="*{count}"/>
+            </td>
+            <td>
+                <label for="productWeight">Product Weight:</label>
+                <input type="text" name="productWeight" id="productWeight" placeholder="" th:field="*{weight}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit"/>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
