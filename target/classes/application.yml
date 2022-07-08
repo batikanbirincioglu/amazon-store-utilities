@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+chromeDriverConfig:
+  pathKey: webdriver.chrome.driver
+  pathValue: /opt/homebrew/Caskroom/chromedriver/103.0.5060.53/chromedriver
