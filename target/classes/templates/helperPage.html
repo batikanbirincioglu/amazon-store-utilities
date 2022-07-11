@@ -29,8 +29,28 @@
                 <input type="text" name="productCount" id="productCount" placeholder="" th:field="*{count}"/>
             </td>
             <td>
+                <label for="monthlySoldProductCount">Monthly Sold Product Count:</label>
+                <input type="text" name="monthlySoldProductCount" id="monthlySoldProductCount" placeholder="" th:field="*{monthlySoldCount}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="asinNumber">Asin Number:</label>
+                <input type="text" name="asinNumber" id="asinNumber" placeholder="" th:field="*{asinNumber}"/>
+            </td>
+            <td>
+                <label for="amazonPrice">Amazon Price:</label>
+                <input type="text" name="amazonPrice" id="amazonPrice" placeholder="" th:field="*{amazonPrice}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <label for="productWeight">Product Weight:</label>
                 <input type="text" name="productWeight" id="productWeight" placeholder="" th:field="*{weight}"/>
+            </td>
+            <td>
+                <label for="octoberDecember">October-December:</label>
+                <input type="checkbox" name="octoberDecember" id="octoberDecember" th:field="*{octoberDecember}"/>
             </td>
         </tr>
         <tr>

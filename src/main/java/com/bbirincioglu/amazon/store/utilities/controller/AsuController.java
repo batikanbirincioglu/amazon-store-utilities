@@ -36,7 +36,7 @@ public class AsuController {
         productInfo.setWeight(productInfo.getWeight() * 2);
         modelAndView.addObject("productInfo", productInfo);
         modelAndView.setViewName("helperPage.html");
-        System.out.println(amazonClient.getAmazonSpecificInfo("alsdkfj"));
+        System.out.println(amazonClient.getAmazonSpecificInfo(productInfo.getAsinNumber(), productInfo.getAmazonPrice(), productInfo.getCount(), productInfo.getMonthlySoldCount(), productInfo.isOctoberDecember()));
         return modelAndView;
     }
 }
